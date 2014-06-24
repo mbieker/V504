@@ -59,7 +59,27 @@ j_s(T) = \frac{4\pi e_0 m_0 k^2}{h^3} T^2 e^{\frac{-e_0 \phi}{k T}}.
 Eine Messung des Sättigungsstromes der emittierenden Metalloberfläche ist nur im Hochvakuum möglich, da die austretenden Eletronen sonst in Wechselwirkung mit den Gasmolekülen treten würden. Die Hochvakuum-Diode ist nicht nur evakuiert, in ihr lässt sich auch ein elektrisches Feld erzeugen.\newline
 Die Hochvakuum-Diode besteht aus einem evakuierten Glaskörper, in dem ein Draht angebracht ist. Durch eine angelegte Spannung fließt Strom durch diesen (Wolfram-)Draht, der so auf 1000-$\SI{3000}{\kelvin}$ erhitzt wird. Zwischen der Glühkathode und einer gegenüber liegenden Anode kann mit einer weiteren angelegten Spannung das elektrische Feld erzeugt werden, um die freien Elektronen abzusaugen.
 \subsection{Die Langmuir-Schottkysche Raumladungsgleichung}
-Bei kleineren Anodenspannungen stellt man fest, dass der Anodenstrom bei gegebener Kathodentemperatur auch von der Anodenspannung abhängt. Ist die Spannung zu klein, erreichen also nicht alle emittierten Elektronen die Anode. 
+Bei kleineren Anodenspannungen stellt man fest, dass der Anodenstrom bei gegebener Kathodentemperatur auch von der Anodenspannung abhängt. Ist die Spannung zu klein, erreichen also nicht alle emittierten Elektronen die Anode. Das Ohmsche Gesetz ist nicht nur bei erreichen der Sättigungsspannung, sondern auch davor nicht gültig, denn die Elektronen führen eine beschleunigte Bewegung aus. Daher nimmt die Raumladungsdichte zur Anode hin ab. Der gemessene Diodenstrom ist kleiner als der zu erwartende, da die Raumladung das Feld von der Kathode abschirmt. Es ergibt sich das Langmuir-Schottkysche Raumladungsgesetz
+\begin{equation}
+j = \frac{4 \epsilon_0 \sqrt{\frac{2 e_0}{m_0}} V^{\frac{3}{2}}}{9a^2},
+\end{equation}
+welches im Raumladungsgebiet (siehe 2.4) gültig ist.
+\subsection{Das Anlaufstromgebiet einer Hochvakuumdiode}
+Aus Formel (4) folgt, dass für $V=0$ auch $j=0$ ist. Es wird allerdings auch bei ausgeschalteter Saugspannung noch ein Strom gemessen. Dieser entsteht aus der Eigengeschwindigkeit der Elektronen. Dadurch sind manche Elektronen sogar in der Lage, gegen eine Gegenspannung anzulaufen. Die Abbildung ??? zeigt das Potentialverhältnis zwischen der Kathode und der Anode. Durch die leitende Verbindung werden die Fermi-Oberflächen auf das gleiche Potential gebracht, durch die angelegte Spannung um $e_0 V$ verschoben. Für den Anlaufstrom in Abhängigkeit vom äußeren Potential ergibt sich
+\begin{equation}
+j(V) = j_0 e^{-\frac{e_0 \Phi_A + e_0 V}{k T}} = C e^{-\frac{e_0 V}{k T}}.
+\end{equation}
+\subsection{Die Kennlinie einer Hochvakuumdiode}
+Unter der Kennlinie einer Hochvakuumdiode versteht man den Zusammenhang zwischen der Stromdichte $j$ und dem angelegten Potential. Sie ist unterteilt in ein Anlaufstrom-, ein Raumladungs- und ein Sättigungsstromgebiet. Das Anlaufstromgebiet liegt bei $V < 0$ zeigt einen exponentiellen Zusammenhang zwischen $I$ und $V$. Das Raumladungsgebiet schließt sich an das Anlaufstromgebiet an und wird dann vom Sättigungsstromgebiet abgelöst. Eine Kennlinie ist in Abbildung ??? zu sehen.
+\section{Aufbau und Durchführung}
+\subsection{Aufbau}
+Die bereits beschriebene Hochvakuumdiode wird mit zwei Netzteilen verbunden. Eines der Netzteile (Konstantspannungsgerät) wird an den Wolframdraht angeschlossen um diesen zu erhitzen. Das zweite Netzteil dient der Erzeugung der Saugspannung. Die beiden anliegenden Potentiale werden direkt an den Netzteilen von eingebauten Voltmetern abgelesen, der Heizstrom und der Anodenstrom mit Hilfe von eingebauten Amperemetern. Eine dritte Spannungsquelle ist in der Lage, eine Gegenspannung an die Elektroden anzugegen.
+\subsection{Erstellung der Kennlinienschar}
+Mit fünf verschiedenen Heizleistungen wird durch Einstellen verschiedener Saugspannungen und Ablesen der Stromstärke je eine Kennlinie aufgenommen. Dann wird versucht, den Sättigungsstrom $I_S$ abzulesen.
+\subsection{Gültigkeitsbereich des Langmuir-Schottkyschen Raumladungsgesetzes}
+Bei maximaler Heizleistung wird eine Kennlinie aufgenommen und dort der Gültigkeitsbereich ermittelt. Aus den im Bereich liegenden Wertepaaren wird der Exponent der Strom-Spannungs-Beziehung ermittelt.
+\subsection{Untersuchung des Anlaufstromgebietes}
+Durch die Verwendung der dritten Spannungsquelle kann ein Gegenfeld aufgebaut werden, um so eine Kennlinie des Anlaufstrom-Gebietes zu ermitteln. Dabei soll die maximale Heizleistung verwendet werden.
 \section{Auswertung}
 \subsection{Bestimmung des Sättigungsstroms}
 Zur Bestimmung des temperaturabhängigen Sättigungsstroms der Diode wurde der Strom in Abhängigkeit vom der Spannung zwischen Anode und Kathode gemessen. Diese Daten befinden sich in Tabelle \ref{tab_a}. In Abbildung \ref{abb_a} werden die ermittelten Kennlinien graphisch dargestellt. 

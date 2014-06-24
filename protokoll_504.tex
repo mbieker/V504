@@ -45,8 +45,13 @@ Metalle besitzen eine sehr gute Leitfähigkeit, da praktisch alle auf den Krista
 f(E) = \frac{1}{e^{\frac{E-\zeta}{k T}}+1}
 \end{equation}
 gibt die Warscheinlichkeit an, dass ein möglicher Zustand mit der Energie E besetzt ist.
-Abbildung \ref{funktion} zeigt den Verlauf der Fermi-Diracschen Verteilungsfunktion am Beispiel des Absoluten Nullpunktes und einer Temperatur $T >> 0$.
-\newline
+Abbildung \ref{funktion} zeigt den Verlauf der Fermi-Diracschen Verteilungsfunktion am Beispiel des absoluten Nullpunktes und einer Temperatur $T >> 0$.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{abb1.png}
+\caption{Fermi-Diracsche Verteilungsfunktion bei verschiedenen Temperaturen [1]}
+\label{funktion}
+\end{figure}
 Die Anzahl der Elektronen pro Volumeneinheit des Phasenraumes (aufgespannt durch Impuls- und Ortskoordinaten) lässt sich mit Hilfe von
 \begin{equation}
 n(E) = \frac{2}{h^3}f(E)
@@ -65,12 +70,25 @@ j = \frac{4 \epsilon_0 \sqrt{\frac{2 e_0}{m_0}} V^{\frac{3}{2}}}{9a^2},
 \end{equation}
 welches im Raumladungsgebiet (siehe 2.4) gültig ist.
 \subsection{Das Anlaufstromgebiet einer Hochvakuumdiode}
-Aus Formel (4) folgt, dass für $V=0$ auch $j=0$ ist. Es wird allerdings auch bei ausgeschalteter Saugspannung noch ein Strom gemessen. Dieser entsteht aus der Eigengeschwindigkeit der Elektronen. Dadurch sind manche Elektronen sogar in der Lage, gegen eine Gegenspannung anzulaufen. Die Abbildung ??? zeigt das Potentialverhältnis zwischen der Kathode und der Anode. Durch die leitende Verbindung werden die Fermi-Oberflächen auf das gleiche Potential gebracht, durch die angelegte Spannung um $e_0 V$ verschoben. Für den Anlaufstrom in Abhängigkeit vom äußeren Potential ergibt sich
+Aus Formel (4) folgt, dass für $V=0$ auch $j=0$ ist. Es wird allerdings auch bei ausgeschalteter Saugspannung noch ein Strom gemessen. Dieser entsteht aus der Eigengeschwindigkeit der Elektronen. Dadurch sind manche Elektronen sogar in der Lage, gegen eine Gegenspannung anzulaufen. Die Abbildung \ref{funktion2} zeigt das Potentialverhältnis zwischen der Kathode und der Anode.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{abb2.png}
+\caption{Potentialverhältnis im Anlaufstromgebiet [1]}
+\label{funktion2}
+\end{figure}
+Durch die leitende Verbindung werden die Fermi-Oberflächen auf das gleiche Potential gebracht, durch die angelegte Spannung um $e_0 V$ verschoben. Für den Anlaufstrom in Abhängigkeit vom äußeren Potential ergibt sich
 \begin{equation}
 j(V) = j_0 e^{-\frac{e_0 \Phi_A + e_0 V}{k T}} = C e^{-\frac{e_0 V}{k T}}.
 \end{equation}
 \subsection{Die Kennlinie einer Hochvakuumdiode}
-Unter der Kennlinie einer Hochvakuumdiode versteht man den Zusammenhang zwischen der Stromdichte $j$ und dem angelegten Potential. Sie ist unterteilt in ein Anlaufstrom-, ein Raumladungs- und ein Sättigungsstromgebiet. Das Anlaufstromgebiet liegt bei $V < 0$ zeigt einen exponentiellen Zusammenhang zwischen $I$ und $V$. Das Raumladungsgebiet schließt sich an das Anlaufstromgebiet an und wird dann vom Sättigungsstromgebiet abgelöst. Eine Kennlinie ist in Abbildung ??? zu sehen.
+Unter der Kennlinie einer Hochvakuumdiode versteht man den Zusammenhang zwischen der Stromdichte $j$ und dem angelegten Potential. Sie ist unterteilt in ein Anlaufstrom-, ein Raumladungs- und ein Sättigungsstromgebiet. Das Anlaufstromgebiet liegt bei $V < 0$ zeigt einen exponentiellen Zusammenhang zwischen $I$ und $V$. Das Raumladungsgebiet schließt sich an das Anlaufstromgebiet an und wird dann vom Sättigungsstromgebiet abgelöst. Eine Kennlinie ist in Abbildung \ref{funktion3} zu sehen.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{abb3.png}
+\caption{Kennlinie einer Hochvakuumdiode [1]}
+\label{funktion3}
+\end{figure}
 \section{Aufbau und Durchführung}
 \subsection{Aufbau}
 Die bereits beschriebene Hochvakuumdiode wird mit zwei Netzteilen verbunden. Eines der Netzteile (Konstantspannungsgerät) wird an den Wolframdraht angeschlossen um diesen zu erhitzen. Das zweite Netzteil dient der Erzeugung der Saugspannung. Die beiden anliegenden Potentiale werden direkt an den Netzteilen von eingebauten Voltmetern abgelesen, der Heizstrom und der Anodenstrom mit Hilfe von eingebauten Amperemetern. Eine dritte Spannungsquelle ist in der Lage, eine Gegenspannung an die Elektroden anzugegen.
